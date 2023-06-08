@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Report";
+}
+
+<h1>Report</h1>
+<table class="table">
+    <tr>
+        <th>Year</th>
+        <th>Month</th>
+        <th>Total Order</th>
+
+
+    </tr>
+    @foreach (var items in Model)
+    {
+                <tr>
+                            <td>
+                    @items.Year
+                            </td>
+                        <td>
+                    @items.Month
+                        </td>
+
+                        <td>
+                @items.Total
+                        </td>
+                   
+
+
+                </tr>
+    }
+
+</table>
+

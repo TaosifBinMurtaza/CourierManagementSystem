@@ -1,0 +1,62 @@
+﻿@model CourierManagementSystem.Models.Courier
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+<h1>Track Order</h1>
+<form asp-action="Index">
+    <br />
+    <div class="row">
+       <div class="col-md-6">
+           <input name="term" class="form-control" placeholder="Search By Id" />
+
+       </div>
+       <div class="col-md-4">
+           <button type="submit" class="btn btn-info">Search</button>
+       </div>
+    </div>
+    <br />
+</form>
+
+<div>
+    <label asp-for="Status"></label>
+    <input asp-for="Status" class="form-control" readonly />
+
+    <label asp-for="ParcelWeight"></label>
+    <input asp-for="ParcelWeight" class="form-control" readonly />
+
+    <label asp-for="Location"></label>
+    <input asp-for="Location" class="form-control" readonly />
+
+
+    <label asp-for="PDate"></label>
+    <input asp-for="PDate" class="form-control" readonly />
+    
+
+    <label asp-for="CName"></label>
+    <input asp-for="CName" class="form-control" readonly />
+
+
+    <label asp-for="CPhoneNo"></label>
+    <input asp-for="CPhoneNo" class="form-control" readonly />
+
+
+    <label asp-for="CAddress"></label>
+    <input asp-for="CAddress" class="form-control" readonly />
+
+
+
+    <label asp-for="RName"></label>
+    <input asp-for="RName" class="form-control" readonly />
+
+
+    <label asp-for="RPhoneNo"></label>
+    <input asp-for="RPhoneNo" class="form-control" readonly />
+
+
+    <label asp-for="RAddress"></label>
+    <input asp-for="RAddress" class="form-control" readonly />
+
+</div>
+

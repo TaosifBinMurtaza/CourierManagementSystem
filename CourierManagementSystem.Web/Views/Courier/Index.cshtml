@@ -1,0 +1,47 @@
+﻿@model CourierManagementSystem.Models.Courier
+
+
+<h1>Add Courier</h1>
+<form action="" method="post">
+
+    <label asp-for="ParcelWeight"></label>
+    <input asp-for="ParcelWeight" class="form-control" />
+    <span asp-validation-for="ParcelWeight" class="text-danger"></span>
+
+    <label asp-for="Location"></label>
+    <input asp-for="Location" class="form-control" />
+    <span asp-validation-for="Location" class="text-danger"></span>
+
+    <label asp-for="PDate"></label>
+    <input asp-for="PDate" class="form-control" />
+    <span asp-validation-for="PDate" class="text-danger"></span>
+
+    <label asp-for="CName"></label>
+    <input asp-for="CName" class="form-control" />
+    <span asp-validation-for="CName" class="text-danger"></span>
+
+    <label asp-for="CPhoneNo"></label>
+    <input asp-for="CPhoneNo" class="form-control" />
+    <span asp-validation-for="CPhoneNo" class="text-danger"></span>
+
+    <label asp-for="CAddress"></label>
+    <input asp-for="CAddress" class="form-control" />
+    <span asp-validation-for="CAddress" class="text-danger"></span>
+
+
+    <label asp-for="RName"></label>
+    <input asp-for="RName" class="form-control" />
+    <span asp-validation-for="RName" class="text-danger"></span>
+
+    <label asp-for="RPhoneNo"></label>
+    <input asp-for="RPhoneNo" class="form-control" />
+    <span asp-validation-for="RPhoneNo" class="text-danger"></span>
+
+    <label asp-for="RAddress"></label>
+    <input asp-for="RAddress" class="form-control" />
+    <span asp-validation-for="RAddress" class="text-danger"></span>
+   
+    <br />
+    <button type="submit" class="btn btn-primary">Create</button>
+
+</form>
